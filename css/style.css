@@ -1,0 +1,557 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: AFuturaOrtoBold;
+    src: url('../fonts/AFuturaOrtoBold.eot');
+    src: url('../fonts/AFuturaOrtoBold.eot') format('embedded-opentype'),
+         url('../fonts/AFuturaOrtoBold.woff') format('woff'),
+         url('../fonts/AFuturaOrtoBold.ttf') format('truetype'),
+         url('../fonts/AFuturaOrtoBold.svg#AFuturaOrtoBold') format('svg');
+}
+
+@font-face {
+    font-family: AFuturaOrto;
+    src: url('../fonts/AFuturaOrto.eot');
+    src: url('../fonts/AFuturaOrto.eot') format('embedded-opentype'),
+         url('../fonts/AFuturaOrto.woff') format('woff'),
+         url('../fonts/AFuturaOrto.ttf') format('truetype'),
+         url('../fonts/AFuturaOrto.svg#AFuturaOrto') format('svg');
+}
+
+#wrapper {
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    background-image: url(../images/bg.jpg);    
+    }
+#headerform{
+    width: 100%;
+    min-width: 1000px;
+    height: 674px;
+    background-image: url(../images/bgheader.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#header{
+    width: 1000px;
+    height: 674px;
+    margin: 0 auto;
+    position: relative;
+}
+#footerform{
+    width: 100%;
+    min-width: 1000px;
+    height: 698px;
+    background-image: url(../images/bgfooter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#footer{
+    width: 1000px;
+    height: 698px;
+    margin: 0 auto;
+    position: relative;
+}
+#content {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+#line{
+    width: 100%;
+    min-width: 1000px;
+    height: 21px;
+    background-image: url(../images/line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clear{
+    height: 0; font-size: 0; overflow: hidden; clear: both;
+}
+
+/* Начало блока шапка*/
+
+#logo1 img{
+    margin-top: 20px;
+}
+
+#logo h2 {
+    padding-top: 5px;
+    width:300px;
+    font: normal 13px AFuturaOrto, sans-serif;
+    color:#ffffff;
+    text-align: center;
+    letter-spacing: 3px;
+}
+#adress {
+    float: left;
+    width: 214px;
+    height: auto;
+    margin-top: 59px;
+    margin-left: 40px;
+}
+
+#adress p{
+    font: normal 18px AFuturaOrto, sans-serif;
+    color:#ffffff;
+    line-height: 31px;
+}
+#headerleft {
+    float: left;
+    margin-left: 86px;
+}
+
+
+#phone {
+    float: right;
+    text-align: center;
+    margin-right: 62px;
+    margin-top: 62px;
+}
+.tel{
+    font: normal 20px AFuturaOrtoBold, sans-serif;
+    color: #ffffff;
+}
+
+
+.zakazzv {
+    padding-top: 10px;
+}
+
+h1{
+    font: normal 25px AFuturaOrtoBold, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* Конец блока шапка*/
+
+/* Начало формы*/
+#form{
+    width: 292px;
+    height: 357px;
+    background-image: url(../images/bgforma1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 266px;
+    right: 78px;
+}
+
+#form p{
+    text-align: center;    
+}
+#form p.legend1{
+    font: normal 20px AFuturaOrto, sans-serif;
+    color: #ffffff;
+    width: 266px;
+    margin: 15px auto 10px auto;
+}
+#form p.legend1 span.bold{
+    font: normal 25px AFuturaOrtoBold, sans-serif;
+    color: #ffffff;
+}
+#form p.legend2{
+    font: normal 18px AFuturaOrto, sans-serif;
+    color: #ffffff;
+    width: 266px;
+    margin: 0px auto 15px auto;
+}
+
+.conf{
+    padding-top: 5px;
+}
+.conf img{
+    float: left;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+p.conf2{
+    font: 13px Arial, sans-serif;
+    color: #cccccc;
+    padding-top: 0px;
+    float: left;
+}
+.input {
+    font: 16px Arial, sans-serif;
+    color: #333333;
+    text-align: center;
+    height: 32px;
+    width: 234px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin-bottom: 19px;
+    border: none;
+}
+
+.input:focus:-moz-placeholder{
+   color: transparent;
+   }
+ 
+.input:focus::-webkit-input-placeholder{
+   color: transparent;
+   }
+
+.input::-webkit-input-placeholder { /* для webkit браузеров */
+	font: 15px Arial, sans-serif;
+    color: #666666;
+}
+.input:-moz-placeholder { /* для браузеров mozilla */
+	font: 15px Arial, sans-serif;
+    color: #666666;
+}
+
+
+
+/* Конец формы*/
+
+/* Начало триггеры*/
+
+#triggers{
+    width: 1000px;
+    height: auto;
+}
+#triggers p {
+    font: normal 21px AFuturaOrto, sans-serif;
+    color: #000000;    
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    line-height: 1.7;
+}
+/* Конец триггеры*/
+
+h3 {
+    font: normal 27px AFuturaOrto, sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-top: 40px;
+}
+h3 span{
+    font: normal 35px AFuturaOrto, sans-serif;
+    color: #3366cc;
+}
+
+/* Начало блока сертификаты*/
+
+#zvezdy {
+    width: 1000px;
+    height: 695px;
+    margin: 0 auto;
+}
+#zvezdy h3{
+    margin-bottom: 50px;
+}
+.zvezda1 {
+    width: 250px;
+    height: 270px;
+    float: left;
+    margin-left: 65px;
+}
+#zvezdy p{
+    text-align: center;
+}
+
+#zvezdy p.p1 {
+    font: normal 20px AFuturaOrto, sans-serif;
+    color: #333333;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+#zvezdy p span.bold {
+    font: normal 20px AFuturaOrtoBold, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+#sert {
+    width: 1000px;
+    height: 448px;
+    margin: 0 auto;
+}
+#sert h3{
+    padding-bottom: 66px;
+}
+
+#sert img.sert1{
+    margin-left: 0px;
+}
+#sert img.sert2{
+    margin-left: 13px;
+}
+
+#raboty {
+    width: 1000px;
+    height: 651px;
+    margin: 0 auto;
+}
+#raboty h3{
+    padding-bottom: 35px;
+}
+
+.rab1, .rab2 {
+    width: 326px;
+    height: 218px;
+    float: left;
+    margin-bottom: 22px;
+}
+.rab1 {
+    margin-left: 0px;
+}
+.rab2 {
+    margin-left: 10px;
+}
+#raboty p{
+    text-align: center;
+}
+
+#price {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 55px;
+}
+#price h3{
+    padding-bottom: 66px;
+}
+.price1 {
+    width: 782px;
+    height: 27px;
+    background-image: url(../images/bgprice.png);
+    background-repeat: no-repeat;
+    margin: 0 auto 30px auto;
+}
+#price p.name{
+    font: normal 18px AFuturaOrto, sans-serif;
+    color: #000000;
+    float: left;
+    margin-left: 25px;
+}
+#price p{
+    padding-top: 3px;
+}
+#price p.cena{
+    font: normal 18px AFuturaOrto, sans-serif;
+    color: #660066;
+    float: right;
+    margin-right: 35px;
+}
+#price p.cena2{
+    font: normal 18px AFuturaOrtoBold, sans-serif;
+    color: #660066;
+    float: right;
+    margin-right: 35px;
+}
+
+#form2{
+    width: 292px;
+    height: 309px;
+    background-image: url(../images/bgforma2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 104px;
+    right: 78px;
+}
+
+#form2 p{
+    text-align: center;    
+}
+#form2 p.legend1{
+    font: normal 22px AFuturaOrtoBold, sans-serif;
+    color: #ffffff;
+    width: 266px;
+    margin: 30px auto;
+}
+
+
+/* Начало блока футер*/
+
+#footer .bottom{
+    padding-top: 470px;
+}
+
+#footer img.aitilider {
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+/* Конец блока футер*/
+
+/* Начало блока всплывающее окно закажите звонок*/
+
+#input {
+    background-color: #5a067d;
+    padding-bottom: 20px;
+}
+
+#input p{
+    text-align: center;
+
+}
+#input p.legend{
+    font: 20px Arial, sans-serif;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#input .conf img{
+    float: left;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+/* Конец блока всплывающее окно закажите звонок*/
+
+/* Таймер обратного отсчета*/
+
+.counter{
+    display: inline-block;
+    padding-top: 0px;
+    margin-left: 10px;
+}
+.counter > p{
+	display: inline-block;
+	font: 32px Calibri;
+	line-height: 45px;
+	background: url(../images/timer-bg.png) repeat-x;
+	width: 45px;
+	padding: 0 0 0 5px;
+	letter-spacing: 9px;
+	color:#fff;
+	margin-top:0px;
+}
+.counter > div > p{
+	display: inline-block;
+	font: bold 16px Arial;
+	width: 50px;
+    margin-top: 0px;
+    padding-right: 14px;
+    float: left;
+}
+
+.cntSeparator {
+font-size: 34px;
+padding-top: 5px;
+margin-left: 3px;
+margin-right: 3px;
+color: #000;
+}
+/* Конец Таймер обратного отсчета*/
+
+/* Button style */ 
+    a#move_up {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width           : 90px;
+        height          : 21px;
+        display         : none;
+        text-align      : center;
+        font            : 12px Verdana;
+        text-decoration : none;
+        color           : #5a067d;
+        background      : #cccccc;
+        padding-top     : 5px;
+        opacity         : 0.9;
+        filter          : alpha(opacity = 90);
+    }
+
+    a#move_up:hover {
+        color      : #fff;
+        background : #333333;
+    }
+    
+/* Кнопка*/   
+
+.knopka{
+-webkit-background-size: 100%;
+-webkit-font-smoothing: antialiased;
+ background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmQwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmY2UwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+ background-size: 100%;
+ background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fffd00), color-stop(100%, #ffce00));
+ background-image: -webkit-linear-gradient(top, #fffd00, #ffce00);
+ background-image: -moz-linear-gradient(top, #fffd00, #ffce00);
+ background-image: -o-linear-gradient(top, #fffd00, #ffce00);
+ background-image: linear-gradient(top, #fffd00, #ffce00);
+ border: solid 1px #ffd800;
+border-bottom-color: rgb(255, 216, 0);
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(255, 216, 0);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(255, 216, 0);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(255, 216, 0);
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-top-style: solid;
+border-top-width: 1px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+cursor: pointer;
+display: block;
+text-align: center;
+text-decoration: none solid rgb(50, 50, 50);
+text-shadow: #ffec00 1px 1px 0;
+vertical-align: baseline;
+margin: 0 auto;
+}
+
+/* Кнопка заказать звонок */    
+.zkzzv{
+    font: normal 15px AFuturaOrto, sans-serif;
+    color: #000000;
+    line-height: 20px;
+    width: 154px;
+    height: 21px;
+}
+.zkz{
+    font: normal 18px AFuturaOrto, sans-serif;
+    color: #333333;
+    line-height: 35px;
+    width: 174px;
+    height: 28px;
+}
+.otpr{
+    font: normal 22px AFuturaOrtoBold, sans-serif;
+    color: #333333;
+    line-height: 20px;
+    width: 234px;
+    height: 36px;
+    letter-spacing: 0.2px;
+}
+.knopka:hover {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmY4OSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZGY1YSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==') !important;
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffff89), color-stop(100%, #ffdf5a)) !important;
+  background-image: -webkit-linear-gradient(top, #ffff89, #ffdf5a) !important;
+  background-image: -moz-linear-gradient(top, #ffff89, #ffdf5a) !important;
+  background-image: -o-linear-gradient(top, #ffff89, #ffdf5a) !important;
+  background-image: linear-gradient(top, #ffff89, #ffdf5a) !important;
+}
+
+.knopka:active {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmY2UwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmQwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==') !important;
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffce00), color-stop(100%, #fffd00)) !important;
+  background-image: -webkit-linear-gradient(top, #ffce00, #fffd00) !important;
+  background-image: -moz-linear-gradient(top, #ffce00, #fffd00) !important;
+  background-image: -o-linear-gradient(top, #ffce00, #fffd00) !important;
+  background-image: linear-gradient(top, #ffce00, #fffd00) !important;
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Профессиональное наращивание и моделирование ресниц</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link type='text/css' href='css/style.css' rel='stylesheet'>
+<!-- Add jQuery library -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen">
+	<script type="text/javascript">
+		$(document).ready(function() {
+            $(".fancybox").fancybox();	
+		});
+        
+        $("p#gallery a").fancybox({
+        'zoomSpeedIn':  0, 
+        'zoomSpeedOut': 0, 
+        'overlayShow':  true
+      });
+      
+	</script>
+	<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!");
+            });
+    });
+});    
+</script>
+    <script src="feedback/js/feedback.js"></script>
+    <script src="feedback/js/jquery.arcticmodal.js"></script>
+    <script src="feedback/js/jquery.jgrowl.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(document).on('click', '.modal_btn', function(){
+			$('#small-modal').arcticmodal();
+		});
+	});
+    </script>
+    <link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
+    <link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function(){
+
+        jQuery('input[placeholder], textarea[placeholder]').placeholder();
+
+
+        });
+    </script>
+    <SCRIPT type="text/javascript" src="js/jquery.upScrollButton.js"></SCRIPT>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+    
+    
+    	jQuery( 'body' ).upScrollButton(
+    		{
+    			upScrollButtonText   :'Вверх',
+    			heightForButtonAppear:20,
+    			scrollTopTime        :1500
+    		}
+    	);
+        });
+    
+    
+    </script>
+<script type="text/javascript" src="js/webforms2-p.js"></script>
+<script type="text/javascript">// <![CDATA[
+$(document).ready(function(){
+    function counter(){
+        var now = new Date();
+        var finDate = new Date("february,28,2014,00:00:00");
+        var totalRemains = (finDate.getTime() - now.getTime());
+        if (totalRemains > 1){
+            var RemainsSec = (parseInt(totalRemains / 1000));
+            var RemainsFullDays = (parseInt(RemainsSec/(24 * 60 * 60)));
+             if (RemainsFullDays < 10){
+                RemainsFullDays = "0" + RemainsFullDays
+            };
+            var secInLastDay = RemainsSec-RemainsFullDays * 24 * 3600;
+            var RemainsFullHours = (parseInt(secInLastDay / 3600));
+            if (RemainsFullHours < 10){
+                RemainsFullHours = "0" + RemainsFullHours
+            };
+            var secInLastHour = secInLastDay - RemainsFullHours * 3600;
+            var RemainsMinutes = (parseInt(secInLastHour / 60));
+            if (RemainsMinutes < 10){
+                RemainsMinutes = "0" + RemainsMinutes
+            };
+            var lastSec = secInLastHour - RemainsMinutes * 60;
+            if (lastSec < 10){
+                lastSec = "0" + lastSec
+            };
+            $(".counter .days").html(RemainsFullDays);
+            $(".counter .hours").html(RemainsFullHours);
+            $(".counter .minutes").html(RemainsMinutes);
+            $(".counter .seconds").html(lastSec);
+        }
+        else {
+            $(".counter").html("Акция закончилась :(");
+        }
+    };
+    setInterval(counter, 1000);
+});
+// ]]></script>
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="headerform">
+            <div id="header">
+                <div id="adress">
+                    <p>г.Брянск <br> Бежецкий р-он<br>ул.Ульянова д.16</p>
+                </div>
+                <div id="headerleft">
+                        <div id="logo" style="font-size:40px; margin-top:60px;">
+                            
+                            <font face="Garamond" color="#f8f8f8" style="font-size:33px; margin-top:88px;"><i><b>Наращивание ресниц <br>Гущина Екатерина </b></i></font>
+                            <!--<a class="aitilider" href="http://itzabot.net" target="_blank"><img class="aitilider" src="images/aitilider.png" width="208" height="37"></a>   -->                                    
+                        </div>
+                    </div>                
+                <div id="phone">
+                    <p class="tel">8-952-962-11-91</p>              
+                   
+                </div>
+                <div class="clear"></div>
+                <h1>Профессиональное наращивание и моделирование ресниц</h1>
+              
+            </div>    
+    </div>   
+    <div id="content">   
+        <div id="triggers">
+            <p>Вам надоело проводить массу времени за нанесением макияжа? простой и быстрый выход - это наращивание ресниц. Вы всегда будете выглядеть на все 100%</p>
+        </div>
+    </div>
+    <div id="line"></div>
+    <div id="content">
+        <div id="zvezdy">
+            <h3>Шесть звезд нашего лешмейкинга</h3>
+            <div class="zvezda1">
+                <p><img class="s" src="images/zvezda1.png" width="144" height="137"></p>
+                <p class="p1">Опыт моделирования<br><span class="bold">более 3 лет</span></p>
+            </div>
+            <div class="zvezda1">
+                <p><img class="s" src="images/zvezda2.png" width="144" height="137"></p>
+                <p class="p1">100% достижения<br><span class="bold">объемности и эффекта</span></p>
+            </div>
+            <div class="zvezda1">
+                <p><img class="s" src="images/zvezda3.png" width="144" height="137"></p>
+                <p class="p1">Материалы<br><span class="bold">высокого качества</span></p>
+            </div>
+            <div class="clear"></div>
+            <div class="zvezda1">
+                <p><img class="s" src="images/zvezda4.png" width="144" height="137"></p>
+                <p class="p1"><span class="bold">Квалифицированность</span><br>мастера</p>
+            </div>
+            <div class="zvezda1">
+                <p><img class="s" src="images/zvezda5.png" width="144" height="137"></p>
+                <p class="p1">Запись в <span class="bold">удобное для Вас время </span></p>
+            </div>
+            <div class="zvezda1">
+                <p><img class="s" src="images/zvezda6.png" width="144" height="137"></p>
+                <p class="p1"><span class="bold">Без вреда</span> для натуральных ресниц</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="line"></div>
+   
+    <div id="line"></div>
+    <div id="content">
+        <div id="raboty">
+            <h3>Мои работы</h3>
+                <div class="rab1">
+                    <p><a class="fancybox" href="images/rab1.jpg" rel="fancy-tour2"><img class="s" src="images/rab1s.png" width="326" height="218"></a></p>
+                </div>
+                <div class="rab2">
+                    <p><a class="fancybox" href="images/rab2.jpg" rel="fancy-tour2"><img class="s" src="images/rab2s.png" width="326" height="218"></a></p>
+                </div>
+                <div class="rab2">
+                    <p><a class="fancybox" href="images/rab3.jpg" rel="fancy-tour2"><img class="s" src="images/rab3s.png" width="326" height="218"></a></p>
+                </div>
+            <div class="clear"></div>
+                <div class="rab1">
+                    <p><a class="fancybox" href="images/rab4.jpg" rel="fancy-tour2"><img class="s" src="images/rab4s.png" width="326" height="218"></a></p>
+                </div>
+                <div class="rab2">
+                    <p><a class="fancybox" href="images/rab5.jpg" rel="fancy-tour2"><img class="s" src="images/rab5s.png" width="326" height="218"></a></p>
+                </div>
+                <div class="rab2">
+                    <p><a class="fancybox" href="images/rab6.jpg" rel="fancy-tour2"><img class="s" src="images/rab6s.png" width="326" height="218"></a></p>
+                </div>
+        </div>
+    </div>
+    <div id="line"></div>
+    <div id="content">   
+        <div id="price">
+            <h3>Прейскурант</h3>
+            <div class="price1">
+                <p class="name">Классическое  classic</p>
+                <p class="cena">1000 р.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name">Полуторный   1,5 D  </p>
+                <p class="cena">1300 р.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name">Двойной   2 D</p>
+                <p class="cena">1500 р.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name">Два с половиной    2,5 D  </p>
+                <p class="cena">1700 р.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name">Тройной    3 D</p>
+                <p class="cena">1900 р.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name">Коррекция до 3-х недель:  </p>
+                <p class="cena"></p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name"> 1,5 D Обьем </p>
+                <p class="cena">600 р.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name">2 D Обьем </p>
+                <p class="cena">900 р.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name">2,5 D Обьем </p>
+                <p class="cena">1000 р.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name">3 D Обьем</p>
+                <p class="cena">1100 р.</p>
+                <div class="clear"></div>
+            </div>
+            <div class="price1">
+                <p class="name">Дополнительно:  </p>
+                <p class="cena"></p>
+                <div class="clear"></div>
+            </div>
+			 <div class="price1">
+                <p class="name">Ламинирование ресниц  </p>
+                <p class="cena">1300 р.</p>
+                <div class="clear"></div>
+            </div>
+			 <div class="price1">
+                <p class="name">Снятие ресниц без последуещего наращивания  </p>
+                <p class="cena">300 р.</p>
+                <div class="clear"></div>
+            </div>
+			<div class="price1">
+                <p class="name">Снятие ресниц с последующим наращиванием  </p>
+                <p class="cena">Бесплатно</p>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footerform">
+        <div id="footerbg">
+            <div id="footer">
+               
+                <div class="bottom">
+                    <div id="adress">
+                        <p>г.Брянск <br> Бежецкий р-он<br>ул.Ульянова д.16</p>
+                    </div>
+                             
+                    <div id="phone">
+                        <p class="tel">8-952-962-11-91</p>              
+                        
+                    </div>
+					 <div id="headerleft">
+                        <div id="logo" style="font-size:40px; margin-top:60px;">
+                            
+                            <font face="Garamond" color="#f8f8f8" style="font-size:40px; margin-top:88px;"><i><b>Наращивание ресниц <br>Гущина Екатерина </b></i></font>
+                            <!--<a class="aitilider" href="http://itzabot.net" target="_blank"><img class="aitilider" src="images/aitilider.png" width="208" height="37"></a>   -->                                    
+                        </div>
+                    </div>   
+                    <div class="clear"></div>
+					
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
+       <!-- Форма для модального окна заказать звонок-->
+     
+        <a id="move_up" href="#">Наверх</a>
+    </div>
+
+
+
+</body>
+</html>
